@@ -1,0 +1,12 @@
+﻿
+
+Liskov Substition Principle
+
+“T cinsinden parametre alan tüm programlar (fonksiyonlar) P olacak şekilde, S tipinde o1 nesnesi ve T tipinde o2 nesnesi olsun. 
+Eğer o1 ile o2 nesneleri yer değiştirdiğinde P’nin davranışı değişmiyorsa S tipi T tipinin alt tipidir!”
+
+Objeler alt sınıfları ile birlikte programın beklentileri değişmeden değiştirlimelidir.
+
+Alt sınıflar miras aldığı üst sınıfın bütün özelliklerini kullanmalı, 
+alt sınıflarda oluşturulan nesneler üst sınıfların nesneleriyle yer değiştirdiklerinde aynı davranışı 
+göstermeli ve herhangi bir kullanılmayan özellik olmamalı.

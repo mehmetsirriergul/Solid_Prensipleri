@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A59897EE-9A45-4556-9520-81177C11F133}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SOLID_Prensipleri</RootNamespace>
+    <AssemblyName>SOLID_Prensipleri</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DIP\Bad\Ad.cs" />
+    <Compile Include="DIP\Bad\rehber.cs" />
+    <Compile Include="DIP\Bad\Soyad.cs" />
+    <Compile Include="DIP\Good\Absraction\IYemYapilisi.cs" />
+    <Compile Include="DIP\Good\Concrete\BesiYemi.cs" />
+    <Compile Include="DIP\Good\Concrete\Fabrika.cs" />
+    <Compile Include="DIP\Good\Concrete\Restaurant.cs" />
+    <Compile Include="DIP\Good\Concrete\SütYemi.cs" />
+    <Compile Include="ISP\BadExample\Abstraction\IMobilya.cs" />
+    <Compile Include="ISP\BadExample\Concrete\Dolap.cs" />
+    <Compile Include="ISP\BadExample\Concrete\Unite.cs" />
+    <Compile Include="ISP\GoodExample\Abstraction\ICekmeceMob.cs" />
+    <Compile Include="ISP\GoodExample\Abstraction\IKapakMob.cs" />
+    <Compile Include="ISP\GoodExample\Abstraction\IMenteseMob.cs" />
+    <Compile Include="ISP\GoodExample\Concrete\Dolap.cs" />
+    <Compile Include="ISP\GoodExample\Concrete\Unite.cs" />
+    <Compile Include="LSP\BadExample\Base.cs" />
+    <Compile Include="LSP\BadExample\Samsung.cs" />
+    <Compile Include="LSP\BadExample\Telefon.cs" />
+    <Compile Include="LSP\BadExample\İphone.cs" />
+    <Compile Include="LSP\GoodExample\Abstraction\Base.cs" />
+    <Compile Include="LSP\GoodExample\Abstraction\IHafiza.cs" />
+    <Compile Include="LSP\GoodExample\Concrete\Iphone.cs" />
+    <Compile Include="LSP\GoodExample\Concrete\Samsung.cs" />
+    <Compile Include="LSP\GoodExample\Concrete\Telefon.cs" />
+    <Compile Include="OCP\BadExample\Dbler.cs" />
+    <Compile Include="OCP\BadExample\Mysql.cs" />
+    <Compile Include="OCP\BadExample\SQl.cs" />
+    <Compile Include="OCP\BadExample\VeriEkleme.cs" />
+    <Compile Include="OCP\GoodExample\Abstraction\IVeritabani.cs" />
+    <Compile Include="OCP\GoodExample\Concrete\MySql.cs" />
+    <Compile Include="OCP\GoodExample\Concrete\Sql.cs" />
+    <Compile Include="OCP\GoodExample\Concrete\Veritabani.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SRP\BadExample\BadProduct.cs" />
+    <Compile Include="SRP\GoodExample\GoodLoger.cs" />
+    <Compile Include="SRP\GoodExample\GoodProduct.cs" />
+    <Compile Include="SRP\Model\Product.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DIP\Teorik.txt" />
+    <Content Include="ISP\ReadMe.txt" />
+    <Content Include="LSP\Teorik.txt" />
+    <Content Include="OCP\ReadMe.txt" />
+    <Content Include="SRP\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

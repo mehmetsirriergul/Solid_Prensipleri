@@ -1,0 +1,8 @@
+﻿
+
+Dependency Inversion Principle
+
+Varlıklar somutlara değil soyutlara bağlı olmalıdır. Üst düzey modülün alt modüllere bağlı olmaması gerektiğini savunur. Ancak soyutlamalara bağlı olması gerektiğni belirtir.
+
+Üst düzey modülün alt düzey modülere bağlı olmasını gerektiği savunur. Bu cümleyi birazcık açıcak olursak, üst düzey sınıfta bir değişiklik yaptığımızda bu değişiklikten etkilenecek sınıf saysının optimum düzeyde olması gerektiğidir.
+

@@ -1,0 +1,5 @@
+﻿
+
+Liskov Substition Principle
+
+Alt sınıflarda oluşan nesneler ile üst sınıflarda oluşan nesneler yer değiştirilebililir olmalıdır. Örneğin karenin ve dikdörtgenin alanını hesaplayan basit bir uygulamamız olsun. Bir dikdörtgen sınıfı oluşturarak bu sınıfa 2 member veriyoruz. Yükseklik ve uzunluk, fakat kare geometrik şekil oalrak bu ata sınıf çokta uygun değil. Yani dikdörtgen sınıfından kalıtım alan bir kare sınıfından nesne oluşturmaya kalkarsak ata sınıfların mantığından ve amacından şaşmış oluruz vu bu prensibe ters düşmüş oluruz. Bu hatayı düzeltmek içiğn dörtgen yapısında ortak özellikleri barındıracak bir sınıf oluşturmalı ve her bir geometrik şekil için bir sınıf tahsis ederek kendi alan hesaplamalarını burada yeirne getirmeliyiz. 

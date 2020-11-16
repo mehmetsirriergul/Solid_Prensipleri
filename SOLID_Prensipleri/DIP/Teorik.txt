@@ -1,0 +1,11 @@
+﻿
+
+Dependency Inversion Principle
+
+Katmanlı mimarilerde üst seviye modüller alt seviyedeki modüllere doğruda bağımlı olmamalıdır.
+Bağımlılıkların tersine çevrilmesi şeklidir.
+
+Amaç üst seviyedeki modüllerin alt seviyelere bağımlı olmasından dolayı çıkabilecek sorunları ortadan 
+kaldırmaktır. Yani alt seviyede yapılan herhangi bir değişikliğin üst seviyede kod değişikliğine veya 
+onun bağlılıklarının etkilenmesine engel olmaktır.
+

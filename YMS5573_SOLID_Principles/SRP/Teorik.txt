@@ -1,0 +1,5 @@
+﻿
+
+Single Responsiblity Princple
+
+Bir sınıfın değiştirilmesi için bir ve yanlızca bir nedeni olmalıdır. Yani yanlızca bir işi olmalıdır. Örneğin, işe yeni başlamış personelin özlük bilgilerinin sisteme kaydedilmesi, bu işlemin loglarının tutulması ve ilgili kişi sisteme kaydedildiğinde ilgili birim müdürüne bilgilendirme gönderilmesini için basit bir modülümüz var. Bu işlemleri tek bir sınıf içerisinde yerine getirebiliriz. Ama bu işlemleri tek bir sınıf içerisinde yeirne getirirsek bu prensibe ters düşmüş oluruz. Bu prensibe ters düşmemizin ne mahsuru var? Öncelikle yazdığımız kodların makarne koda dönüşmemesi ve bu kodların bakım onarım maliyetlerinin artırılmaması açısından öenmli bir prensiptir. Bu prensibe uymak için tüm bu işlemleri aytı ayrı sınıflarda ele alalım. Her sınıfın bir sorumluluğu olmalıdır prensibinden yola çıkarak, loglama işlemlerini bir sınınfta, çalışanın veri tabanına kaydedilmeis bir sınıfta ve bilgilendirme operasyonu bir sınıfta yapılmalıdır.
