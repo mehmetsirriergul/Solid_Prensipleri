@@ -49,7 +49,6 @@
     <Compile Include="DIP\Good\Absraction\IYemYapilisi.cs" />
     <Compile Include="DIP\Good\Concrete\BesiYemi.cs" />
     <Compile Include="DIP\Good\Concrete\Fabrika.cs" />
-    <Compile Include="DIP\Good\Concrete\Restaurant.cs" />
     <Compile Include="DIP\Good\Concrete\SütYemi.cs" />
     <Compile Include="ISP\BadExample\Abstraction\IMobilya.cs" />
     <Compile Include="ISP\BadExample\Concrete\Dolap.cs" />

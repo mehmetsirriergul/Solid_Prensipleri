@@ -9,9 +9,10 @@ namespace SOLID_Prensipleri.LSP.BadExample
     public class Samsung : Base
     {
         public override void ekran(string value)
-        { 
-            olculer(5.1);
+        {
+            throw new NotImplementedException();
         }
+
 
         public override void hafiza(string value)
         {
@@ -19,3 +20,4 @@ namespace SOLID_Prensipleri.LSP.BadExample
         }
     }
 }
+

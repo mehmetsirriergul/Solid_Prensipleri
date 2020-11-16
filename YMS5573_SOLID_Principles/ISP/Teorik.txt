@@ -1,5 +1,0 @@
-﻿
-
-Interface Segration Principle
-
-Sınıflar ihtiyaçları olmayan özellikleri ve yetenekleri içeren interface'lerden implment edilmemelidir. Örnğin IBird arayüzümüz olsun, bu interface'de Uçma ve Yürüme davranıçlarına sahip olsun. İlgili arayüzü tavuk ve şahin concrete sınıflarına implment ettiğimizde. Bu implemantation sonucunda tavuk ve şahin sınıfları ilgili yeteneklere kavuşur. Bu bağlamda şahin sınıf implemantation sonucunda edindiği yetenekleri karşılamaktadır. Lakin tavuk sınıfı aldığı yetenekleri karşıalyamaz çünkü her tavuk uçamaz. Bu durumu düzeltmek için Uçabileni Uçamayan kuşlar tarzında interface'ler açarak alt sınıfların gereksiz davranışlar kazanmasının öneine geçebiliriz.
